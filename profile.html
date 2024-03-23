@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gaegu&family=Nanum+Gothic:wght@400;700&family=Nanum+Pen+Script&display=swap"
+    rel="stylesheet">
+  <title>Profile Management</title>
+  <link rel="icon" href="images/totoro.svg">
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+  <header>
+
+    <div class="logo">
+      <div>
+        <a href="#"><img src="./images/logo.png" alt="로고" height="80px"></a>
+      </div>
+      <span class="logoName">Ghibli Profile Management</span>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="character">
+      <div>
+        <div class="router">
+          <button class="addBtn" id="add-btn">캐릭터 추가</button>
+          <input class="character-search" type="text" placeholder="사람찾아요">
+        </div>
+      </div>
+      <div id="inputCharacter" class="input-character">
+        <div class="input-character-title">
+          <span>신상정보 입력</span>
+        </div>
+        <form class="input-character-content">
+          <input class="input-image" type="file" id="file-input">
+          <input class="search" type="text" placeholder="이름">
+          <input class="search" type="text" placeholder="나이">
+          <input class="search" type="text" placeholder="성별">
+          <input class="search" type="text" placeholder="MBTI">
+        </form>
+        <div class="input-buttons">
+          <button id="saveButton" class="save-button">저장</button>
+          <button id="cancelButton" class="cancel-button">닫기</button>
+        </div>
+      </div>
+      <div class="imformation">
+        <table id="table">
+          <thead>
+            <tr>
+              <th>프로필 사진</th>
+              <th>이름</th>
+              <th>나이</th>
+              <th>성별</th>
+              <th>MBTI</th>
+              <th>설정</th>
+            </tr>
+          </thead>
+          <!-- <tr>
+            <td><img src="./images/하쿠.PNG" alt=""></td>
+            <td>하쿠</td>
+            <td>13513</td>
+            <td>남자</td>
+            <td>INFJ</td>
+            <td>
+              <button>보기</button>
+              <button>편집</button>
+              <button>삭제</button>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="./images/치히로.PNG" alt=""></td>
+            <td>치히로</td>
+            <td>13513</td>
+            <td>여자</td>
+            <td>ENFP</td>
+            <td>
+              <button>보기</button>
+              <button>편집</button>
+              <button>삭제</button>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="./images/키키.PNG" alt=""></td>
+            <td>키키</td>
+            <td>13513</td>
+            <td>여자</td>
+            <td>ENFJ</td>
+            <td>
+              <button>보기</button>
+              <button>편집</button>
+              <button>삭제</button>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="./images/하울.PNG" alt=""></td>
+            <td>하울</td>
+            <td>13513</td>
+            <td>남자</td>
+            <td>ISFP</td>
+            <td>
+              <button>보기</button>
+              <button>편집</button>
+              <button>삭제</button>
+            </td>34
+          </tr> -->
+
+
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <script src="./main.js"></script>
+</body>
+
+</html>
